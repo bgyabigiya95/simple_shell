@@ -79,3 +79,34 @@ int other_set_buitlins(char **commands)
 		if (path == NULL)
 			path = "/";
 
+		_cd(path);
+		return (1);
+	}
+
+	if (_strcmp(commands[0], "alias") == 0)
+	{
+		_alias(commands);
+		return (1);
+	}
+
+	if (_strcmp(commands[0], "help") == 0)
+	{
+		_help(commands);
+		return (1);
+	}
+
+	if (_strcmp(commands[0], "history") == 0)
+	{
+		if (commands[1] != NULL)
+		{
+			print_builtin_error("history: No args allowed", "");
+			return (1);
+		}
+
+		/*_history();*/
+		/*return (1);*/
+	}
+
+	return (0);
+}
+
