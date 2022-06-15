@@ -6,6 +6,7 @@
  * @s2: string 2
  * Return: copy of string with null terminated char
  */
+char *f_strjoin(char const *s1, char const *s2)
 {
 	size_t	l3;
 	char	*s3;

@@ -93,6 +93,7 @@ char *num_to_str(int num)
 			num_rev += num % 10;
 			num /= 10;
 		}
+
 	num_str = malloc(sizeof(char) * (digits + 1));
 	if (num_str == NULL)
 		dispatch_error("Error: Coudn't allocate memory for number conversion");

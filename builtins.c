@@ -92,6 +92,7 @@ int _unsetenv(char *name)
 
 	/* Var doesn't exist, we can print error or do nothing */
 	set_process_exit_code(0); /* Indicates that no error ocurred */
+	
 	return (1);
 }
 

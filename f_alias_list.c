@@ -24,6 +24,7 @@ list_t **get_alias_head()
  *
  * Return: 1 for true, 0 otherwise
  */
+int is_set_alias(char *alias_pair)
 {
 	int i;
 
