@@ -40,6 +40,7 @@ void update_count_lines(void)
 
 	chdir(curr_dir);
 }
+
 /**
  * get_history_lines_count - Returns the lines count of history file
  *

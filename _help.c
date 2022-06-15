@@ -71,6 +71,7 @@ int	f_read_line(char **str, char **line, int fd)
  */
 int _help(char **commands)
 {
+	
 	int fd, i = 1, result = -1;
 	char *line = NULL;
 

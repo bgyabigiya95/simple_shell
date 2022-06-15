@@ -1,4 +1,5 @@
 #include "shell.h"
+
 /**
  * handle_var_replacement - Handles dollar vars '$'
  * @commands: Array of commands
